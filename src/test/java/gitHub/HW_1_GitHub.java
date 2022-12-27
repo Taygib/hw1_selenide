@@ -29,7 +29,7 @@ public class HW_1_GitHub {
                 "junit5.SoftAssertsExtension"));
 
 
-        sleep(2000);
+       // sleep(2000);
     }
 
 }
