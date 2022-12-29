@@ -29,8 +29,5 @@ public class Hw1GithubTest {
            $$("div.markdown-body").shouldHave(CollectionCondition.texts("com.codeborne.selenide." +
                 "junit5.SoftAssertsExtension"));
 
-
-        sleep(5000);
     }
-
 }
