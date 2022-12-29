@@ -1,16 +1,18 @@
 package gitHub;
 
 import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Selectors;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class HW_1_GitHub {
+public class HW_1_GithubTest {
 
     @Test
-    void HW_1GitHub() {
+    void hw_1GitHub() {
 
 
         // открыть главную страницу
@@ -22,14 +24,15 @@ public class HW_1_GitHub {
         //Перейдите в раздел Wiki проекта
         $$("ul.UnderlineNav-body  li").get(5).$("a#wiki-tab").click();
         //Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions
-        $$("#wiki-body").shouldHave(CollectionCondition.texts("Soft assertions"));
-        $$("#wiki-body div.markdown-body ul li").get(7).$("a.internal").click();
+        $("ul.m-0 .js-wiki-more-pages-link").click();
+        $$("#wiki-pages-box").shouldHave(CollectionCondition.texts("SoftAssertions"));
         //Откройте страницу SoftAssertions, проверьте что внутри есть пример кода для JUnit5
-        $$("div.markdown-body").shouldHave(CollectionCondition.texts("com.codeborne.selenide." +
+        $(Selectors.byText("SoftAssertions")).click();
+           $$("div.markdown-body").shouldHave(CollectionCondition.texts("com.codeborne.selenide." +
                 "junit5.SoftAssertsExtension"));
 
 
-       // sleep(2000);
+        sleep(5000);
     }
 
 }
