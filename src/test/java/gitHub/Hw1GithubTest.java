@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class hw1GithubTest {
+public class Hw1GithubTest {
 
     @Test
     void hw1GitHub() {
@@ -30,7 +30,7 @@ public class hw1GithubTest {
                 "junit5.SoftAssertsExtension"));
 
 
-      //  sleep(5000);
+        sleep(5000);
     }
 
 }
