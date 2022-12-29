@@ -2,18 +2,16 @@ package gitHub;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Selectors;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class HW_1_GithubTest {
+public class hw1GithubTest {
 
     @Test
     void hw_1GitHub() {
-
 
         // открыть главную страницу
         open("https://github.com");
