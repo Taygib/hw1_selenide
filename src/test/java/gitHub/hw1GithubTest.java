@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class hw1GithubTest {
 
     @Test
-    void hw_1GitHub() {
+    void hw1GitHub() {
 
         // открыть главную страницу
         open("https://github.com");
