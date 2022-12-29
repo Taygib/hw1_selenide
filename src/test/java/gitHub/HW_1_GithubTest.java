@@ -32,7 +32,7 @@ public class HW_1_GithubTest {
                 "junit5.SoftAssertsExtension"));
 
 
-        sleep(5000);
+      //  sleep(5000);
     }
 
 }
